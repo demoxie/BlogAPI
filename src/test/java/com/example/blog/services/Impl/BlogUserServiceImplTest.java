@@ -1,3 +1,4 @@
+/*
 package com.example.blog.services.Impl;
 
 import com.example.blog.model.BlogUser;
@@ -64,19 +65,23 @@ class BlogUserServiceImplTest {
         //System.out.println(user.getUsername());
     }
 
-   /* @Test
+   */
+/* @Test
     void login() {
         Mockito.when(blogUserRepository.findBlogUserByUsernameAndPassword("jaga","12345")).thenReturn(blogUser);
         assertEquals(blogUser,blogUserService.login(blogUser,httpSession));
-    }*/
+    }*//*
 
-  /*  @Test
+
+  */
+/*  @Test
     void register() {
         BlogUser user = blogUserService.register(blogUser);
         //System.err.println(user);
         Mockito.when(blogUserRepository.save(blogUser)).thenReturn(blogUser);
         assertEquals(blogUser,user);
-    }*/
+    }*//*
+
 
     @Test
     void logout() {
@@ -87,11 +92,13 @@ class BlogUserServiceImplTest {
 
     }
 
- /*   @Test
+ */
+/*   @Test
     void cancelDeactivation() {
         Mockito.when(blogUserRepository.findBlogUserByUserID(1L)).thenReturn(user1);
         assertEquals(blogUserRepository.findBlogUserByUserID(1L),user1);
-    }*/
+    }*//*
+
 
     @Test
     void cancel() {
@@ -101,20 +108,26 @@ class BlogUserServiceImplTest {
     void getBlogUser() {
     }
 
+*/
 /*    @Test
     void getAllBlogUsers() throws Exception {
         List<BlogUser> records = new ArrayList<>(Arrays.asList(user1,user2));
 
         Mockito.when(blogUserRepository.findAll()).thenReturn(records);
 
-        *//*mockMvc.perform(MockMvcRequestBuilders
+        *//*
+*/
+/*mockMvc.perform(MockMvcRequestBuilders
                         .get("/viewAllBlogUsers")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$", hasSize(2)))
                 .andExpect(jsonPath("$[1].name", is("Shadrach Adamu")));*//*
+*/
+/*
         assertEquals(blogUserRepository.findAll().size(),2);
-    }*/
+    }*//*
+
 
     @Test
     void updateBlogUser() {
@@ -131,4 +144,4 @@ class BlogUserServiceImplTest {
     @Test
     void addUserToFriendList() {
     }
-}
+}*/
