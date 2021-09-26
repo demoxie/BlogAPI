@@ -39,8 +39,7 @@ class BlogUserServiceImplTest {
     private BlogUserService blogUserService;
     @MockBean
     private BlogUserRepository blogUserRepository;
- /*   @Autowired
-    private MockMvc mockMvc;*/
+
     @Autowired
     private ObjectMapper mapper;
 
